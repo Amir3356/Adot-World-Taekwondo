@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f5efe2;
+  --gold: #e8b450;
+  --gold-deep: #b07d22;
+  --gold-light: #ffe6a8;
+  --ember: #d4682a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-light: var(--gold-light);
+  --color-ember: var(--ember);
+  --font-sans: var(--font-ethiopic-sans);
+  --font-serif: var(--font-ethiopic-serif);
+}
+
+* {
+  min-width: 0;
+}
+
+html {
+  background: var(--background);
+  /* Lenis drives scrolling; native smooth would fight it */
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ethiopic-sans), system-ui, sans-serif;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Amharic runs tall: a little extra leading keeps fidel legible */
+:lang(am),
+body {
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--gold);
+  color: #050505;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(
+    175deg,
+    var(--gold-light) 0%,
+    var(--gold) 38%,
+    var(--gold-deep) 72%,
+    var(--gold-light) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-rule {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-deep),
+    var(--gold),
+    var(--gold-deep),
+    transparent
+  );
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
