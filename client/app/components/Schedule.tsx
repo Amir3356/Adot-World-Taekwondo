@@ -1,7 +1,5 @@
 "use client";
 
-import { motion, useScroll, useSpring } from "motion/react";
-import { useRef } from "react";
 import ParallaxPhoto from "./ParallaxPhoto";
 import { Reveal, WordReveal } from "./Reveal";
 
@@ -45,19 +43,8 @@ const PROGRAMME = [
   },
 ];
 
-/** Vertical timeline of the day, with a rail that fills as you scroll. */
+/** The day's programme, listed in order. */
 export default function Schedule() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 75%", "end 55%"],
-  });
-  const fill = useSpring(scrollYProgress, {
-    stiffness: 90,
-    damping: 28,
-    restDelta: 0.001,
-  });
-
   return (
     <section className="relative z-20 py-20 sm:py-28">
       <Reveal className="mx-auto mb-16 max-w-3xl px-6 text-center">
@@ -74,24 +61,11 @@ export default function Schedule() {
       </Reveal>
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[1fr_360px] lg:gap-16">
-        <div ref={ref} className="relative">
-          {/* rail: dim track with a gold fill that follows the scroll */}
-          <div className="absolute top-2 bottom-2 left-[7px] w-px bg-[#e8b450]/15" />
-          <motion.div
-            style={{ scaleY: fill }}
-            className="absolute top-2 bottom-2 left-[7px] w-px origin-top bg-gradient-to-b from-[#ffe6a8] via-[#e8b450] to-[#b07d22]"
-          />
-
+        <div>
           <ol className="space-y-9">
             {PROGRAMME.map((item, i) => (
-              <li key={item.title} className="relative pl-10">
+              <li key={item.title} className="relative">
                 <Reveal delay={i * 0.08} y={28}>
-                  {/* node */}
-                  <span className="absolute top-[6px] left-0 flex h-[15px] w-[15px] items-center justify-center">
-                    <span className="h-[15px] w-[15px] rounded-full border border-[#e8b450]/60 bg-[#050505]" />
-                    <span className="absolute h-[7px] w-[7px] rounded-full bg-[#e8b450]" />
-                  </span>
-
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     <span className="font-serif text-2xl font-bold text-gold-gradient sm:text-3xl">
                       {item.from}

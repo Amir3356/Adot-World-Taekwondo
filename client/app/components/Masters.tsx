@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const PEOPLE = [
   {
     role: "ዋና አሰልጣኝ",
-    name: "ሳቦም ሱፍ ሸምሱ",
+    name: "ሳቦም ዩሱፍ ሸምሱ",
     note: "የክለቡ መሥራችና መሪ አሰልጣኝ",
   },
   {
