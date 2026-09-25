@@ -69,7 +69,7 @@ export default function Finale() {
               <span>🇸🇩</span>
             </div>
             <p className="mt-2 text-sm tracking-[0.18em] text-[#e8b450]/80">
-              አዶት ወርልድ ቴኳንዶ ክለብ
+              አዶት ታይገር ወርልድ ቴኳንዶ ክለብ
             </p>
           </div>
         </Reveal>

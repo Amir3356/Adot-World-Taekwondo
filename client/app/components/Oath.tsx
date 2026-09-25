@@ -64,8 +64,8 @@ export default function Oath() {
         <motion.div style={{ clipPath: clip }} className="absolute inset-0">
           <motion.div style={{ scale: imgScale }} className="absolute inset-0">
             <Image
-              src="/asset/photo_2026-09-20_11-21-14.jpg"
-              alt="ተመራቂው በቴኳንዶ አቋም ላይ"
+              src="/asset/medals-shoulder.jpg"
+              alt="ተመራቂው ሜዳሊያዎቹን በትከሻው ላይ ይዞ"
               fill
               sizes="100vw"
               className="object-cover object-[center_top] contrast-[1.08] brightness-[0.95] saturate-[0.85]"

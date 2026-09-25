@@ -49,7 +49,7 @@ export default function EventDetails() {
               የማስመረቂያ አድራሻ
             </p>
             <p className="mt-4 font-serif text-2xl font-bold text-[#f5efe2]">
-              በሰበታ ጂም ሲኒ
+              በሰበታ ጂም ሲኒማ ሆል
             </p>
           </div>
         </Reveal>

@@ -19,8 +19,8 @@ export default function Hero() {
   const titleOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0]);
   const photoY = useTransform(scrollYProgress, [0, 1], ["0%", "-16%"]);
   const photoScale = useTransform(scrollYProgress, [0, 1], [1, 1.16]);
-  const veilScrub = useTransform(scrollYProgress, [0, 1], [0.45, 0.95]);
-  const veil = reducedMotion ? 0.62 : veilScrub;
+  const veilScrub = useTransform(scrollYProgress, [0, 1], [0.3, 0.95]);
+  const veil = reducedMotion ? 0.5 : veilScrub;
 
   return (
     <section
@@ -33,23 +33,23 @@ export default function Hero() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/asset/photo_2026-09-20_11-21-24.jpg"
-          alt="የአዶት ወርልድ ቴኳንዶ ክለብ ተመራቂ በጥቁር ቀበቶ"
+          src="/asset/medals-portrait.jpg"
+          alt="የአዶት ታይገር ወርልድ ቴኳንዶ ክለብ ተመራቂ ሜዳሊያዎቹን አጥልቆ"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_16%] opacity-90 contrast-[1.1] brightness-[0.9] saturate-[0.8]"
+          className="object-cover object-[center_22%] opacity-95 contrast-[1.06] brightness-[1.12] saturate-[0.9]"
         />
       </motion.div>
 
       {/* multiply crushes the studio grey to near-black */}
-      <div className="absolute inset-0 z-[5] bg-[#3a2c12] mix-blend-multiply" />
+      <div className="absolute inset-0 z-[5] bg-[#6b5326] mix-blend-multiply" />
       <motion.div
         style={{ opacity: veil }}
         className="absolute inset-0 z-10 bg-gradient-to-b from-[#050505]/85 via-[#050505]/45 to-[#050505]"
       />
       {/* vignette focuses the eye on the title */}
-      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_50%_38%,transparent_30%,rgba(5,5,5,0.92)_88%)]" />
+      <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_50%_34%,transparent_42%,rgba(5,5,5,0.9)_92%)]" />
       {/* Warm ember glow from below, echoing the poster */}
       <div className="absolute inset-x-0 bottom-0 z-10 h-1/2 bg-[radial-gradient(ellipse_at_bottom,rgba(212,104,42,0.28),transparent_65%)]" />
 
@@ -63,7 +63,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6 text-sm tracking-[0.18em] text-[#e8b450] sm:text-base"
         >
-          አዶት ወርልድ ቴኳንዶ ክለብ
+          አዶት ታይገር ወርልድ ቴኳንዶ ክለብ
         </motion.p>
 
         <motion.h1

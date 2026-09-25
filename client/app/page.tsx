@@ -5,7 +5,6 @@ import ScrollCue from "./components/ScrollCue";
 import Hero from "./components/Hero";
 import Journey from "./components/Journey";
 import Marquee from "./components/Marquee";
-import Tenets from "./components/Tenets";
 import Oath from "./components/Oath";
 import Masters from "./components/Masters";
 import Poster from "./components/Poster";
@@ -28,7 +27,6 @@ export default function Home() {
         <Hero />
         <Journey />
         <Marquee />
-        <Tenets />
         <Oath />
         <Masters />
         <Poster />

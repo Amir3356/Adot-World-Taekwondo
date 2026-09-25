@@ -17,9 +17,9 @@ const ethiopicSerif = Noto_Serif_Ethiopic({
 });
 
 export const metadata: Metadata = {
-  title: "አዶት ወርልድ ቴኳንዶ ክለብ — ታላቅ ምርቃት",
+  title: "አዶት ታይገር ወርልድ ቴኳንዶ ክለብ — ታላቅ ምርቃት",
   description:
-    "የአዶት ወርልድ ቴኳንዶ ክለብ ታላቅ የምረቃ ሥነ ሥርዓት። ጥቅምት 8 ቀን 2019 ዓ/ም፣ ከጠዋቱ 3:00፣ በሰበታ ጂም ሲኒ።",
+    "የአዶት ታይገር ወርልድ ቴኳንዶ ክለብ ታላቅ የምረቃ ሥነ ሥርዓት። ጥቅምት 8 ቀን 2019 ዓ/ም፣ ከጠዋቱ 3:00፣ በሰበታ ጂም ሲኒማ ሆል።",
 };
 
 export const viewport: Viewport = {
