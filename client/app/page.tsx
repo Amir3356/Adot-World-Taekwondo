@@ -3,7 +3,8 @@ import Scene3D from "./components/Scene3D";
 import ScrollRail from "./components/ScrollRail";
 import ScrollCue from "./components/ScrollCue";
 import Hero from "./components/Hero";
-import Journey from "./components/Journey";
+import Schedule from "./components/Schedule";
+import Gallery from "./components/Gallery";
 import Marquee from "./components/Marquee";
 import Oath from "./components/Oath";
 import Masters from "./components/Masters";
@@ -25,7 +26,8 @@ export default function Home() {
 
       <main className="relative">
         <Hero />
-        <Journey />
+        <Schedule />
+        <Gallery />
         <Marquee />
         <Oath />
         <Masters />
