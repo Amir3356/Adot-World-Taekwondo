@@ -65,8 +65,6 @@ export default function Finale() {
           <div className="mt-20 flex flex-col items-center gap-3">
             <div className="flex items-center gap-3 text-2xl" aria-hidden>
               <span>🇪🇹</span>
-              <span className="h-px w-8 bg-[#e8b450]/40" />
-              <span>🇸🇩</span>
             </div>
             <p className="mt-2 text-sm tracking-[0.18em] text-[#e8b450]/80">
               አዶት ታይገር ወርልድ ቴኳንዶ ክለብ

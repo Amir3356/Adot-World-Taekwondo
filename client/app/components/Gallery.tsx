@@ -27,12 +27,15 @@ export default function Gallery() {
     <section className="relative z-20 py-20 sm:py-28">
       <Reveal className="mx-auto mb-14 max-w-3xl px-6 text-center">
         <p className="mb-4 text-sm tracking-[0.18em] text-[#e8b450]/80">
-          ተመራቂው
+          የምረቃ መረጃ
         </p>
         <h2 className="font-serif text-4xl leading-tight font-bold sm:text-6xl">
-          <WordReveal text="ጥቁር ቀበቶ" className="text-[#f5efe2]" />{" "}
-          <WordReveal text="እና ሜዳሊያ" className="text-gold-gradient" />
+          <WordReveal text="የምረቃው" className="text-[#f5efe2]" />{" "}
+          <WordReveal text="መረጃና ምስሎች" className="text-gold-gradient" />
         </h2>
+        <p className="mx-auto mt-5 max-w-xl text-base text-[#f5efe2]/70 sm:text-lg">
+          የአዶት ታይገር ወርልድ ቴኳንዶ ክለብ የጥቁር ቀበቶ ተመራቂ የምረቃ መረጃ እና የክብረ በዓሉ ምስሎች።
+        </p>
       </Reveal>
 
       <div className="mx-auto grid max-w-6xl gap-5 px-6 sm:grid-cols-3">
